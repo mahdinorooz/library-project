@@ -6,7 +6,7 @@ trait SmsTrait
 {
     public function sendSms($to, $text)
     {
-        $url = 'https://console.melipayamak.com/api/send/simple/9f20a2ff432f4300897763e8dd19253e';
+        $url = '';
         $data = array('from' => '50004001401210', 'to' => $to, 'text' => $text);
         $data_string = json_encode($data);
         $ch = curl_init($url);
